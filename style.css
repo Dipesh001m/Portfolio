@@ -5,8 +5,10 @@
 }
 
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
     background-color: #F6F6F2;
+    font-weight: 500;
 }
 
 html{
@@ -59,11 +61,14 @@ html{
   }
 
   .logo {
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
   }
   
   .logo:hover {
     cursor: default;
+    
   }
 
   /* HAMBURGER MENU */
@@ -200,6 +205,8 @@ html{
   .section_text_p2 {
     font-size: 1.65rem;
     margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
   }
 
   #socials-container {
@@ -273,11 +280,9 @@ html{
     text-align: center;
   }
 
-  
   .about-containers {
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   
   .about-details-container {
@@ -288,6 +293,7 @@ html{
   .about-containers,
   .about-details-container {
     display: flex;
+    margin-top: 2rem;
   }
   
   .about-pic {
@@ -305,7 +311,7 @@ html{
   }
   
   .section-container {
-    gap: 4rem;
+    gap: 2rem;
     height: 70%;
   }
   
@@ -347,12 +353,13 @@ html{
     display: flex;
     width: 10rem;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: 0rem;
   }
   
   article .icon {
     cursor: default;
   }
+  
 
   /* PROJECTS SECTION */
 
@@ -360,19 +367,22 @@ html{
     position: relative;
   }
   
-  .color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-  }
-  
   .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 500px;
+  }
+
+  .h2, .project-title {
+    text-align: center;
+  }
+
+  .project-description {
+    margin-top: 1rem;
   }
   
   .project-title {
-    margin: 1rem;
+    margin: 0rem;
     color: black;
   }
   
