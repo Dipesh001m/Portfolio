@@ -162,7 +162,7 @@ html{
 
   section {
     padding-top: 4vh;
-    height: 90vh;
+    height: 100vh;
     margin: 0 12rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -311,7 +311,7 @@ html{
   }
   
   .section-container {
-    gap: 2rem;
+    gap: 3rem;
     height: 70%;
   }
   
@@ -329,8 +329,8 @@ html{
   
   .experience-sub-title {
     color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.72rem;
+    font-weight: 700;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   
@@ -338,6 +338,7 @@ html{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 1rem;
   }
   
   .article-container {
@@ -369,7 +370,7 @@ html{
   
   .project-img {
     border-radius: 2rem;
-    width: 80%;
+    width: 90%;
     height: 500px;
   }
 
@@ -389,6 +390,7 @@ html{
   .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    margin-top: 1rem;
   }
 
   /* CONTACT */

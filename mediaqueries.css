@@ -1,11 +1,12 @@
 @media screen and (max-width: 1400px) {
     #profile {
-      height: 80vh;
-      margin-bottom: 2rem;
+      height: 90vh;
+      margin-bottom: 3rem;
     }
     #about,
     #experience {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+        height: 90vh;
     }
 
     .about-containers {
