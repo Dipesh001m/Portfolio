@@ -1,17 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
 
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Portfolio</div>
-      <div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Portfolio</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Portfolio</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./assets/profile-pic (3).png" alt="Dipesh profile picture" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, i'm</p>
+      <h1 class="title">Dipesh Mandal</h1>
+      <p class="section_text_p2">
+        Proficient in Aws Cloud Services, DevOps, Coding, Scripting,
+        Troubleshooting, Automation, and Support.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/dipesh-mandal-a39323285/'" />
+        <img src="./assets/github.png" alt="My github profile" class="icon"
+          onclick="location.href='https://github.com/Dipesh001m'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section_text_p1">Get To know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="./assets/profile-pic (1).png" alt="Profile picture" class="about pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-containers">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>
+              Phoenix Advanced Software Pvt. Ltd, Jaipur — Process Associate
+              <br />
+              Sep 2021 - May 2023
+            </p>
+          </div>
+          <div class="details-containers">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>
+              B.tech in Computer science CGPA-7.89 <br />Diploma in Computer
+              science CGPA-7.45
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            <hr>I am Dipesh Mandal, an AWS Cloud and DevOps enthusiast with
+            expertise in automation, cloud services, and infrastructure
+            deployment. Skilled in AWS (EC2, S3, IAM, Lambda, VPC), scripting
+            (C++, Python, Bash), and tools like Docker, Terraform, Ansible,
+            and Kubernetes. I also have experience with PostgreSQL, DynamoDB,
+            and RDS. At Phoenix Advanced Software Pvt. Ltd., I automated
+            server setup and reduced manual tasks by 90%, boosting system
+            reliability by 30%. I hold a B.Tech in Computer Science (expected
+            2025) from Rajdhani Engineering College and a Diploma from
+            Shekhawati Group of Institutions. Certified in AWS Cloud
+            Practitioner and AWS Solutions Architect Associate. My projects
+            include building serverless apps with AWS Lambda, automating
+            infrastructure with Terraform, and creating data pipelines with
+            Kinesis, Glue, and Athena. I thrive in collaborative environments
+            and value continuous learning. Outside of work, I enjoy cricket,
+            badminton, and traveling.
+            <hr>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-containers">
+          <h2 class="experience-sub-title">Aws Services</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>EC2</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>S3</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CloudFront</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Lambda</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Route53</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>VPC</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CloudFront</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>API Gateway</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ELB</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>DynamoDB</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CloudWatch</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-containers">
+          <h2 class="experience-sub-title">Languages & DevOps Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>BashScripting</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Terraform</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Ansible</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kubernetes</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Yaml</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & Github</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Puppet</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CentOS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>UBUNTU</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2 class="project-title">
+              1. Responsive Serverless Web Application Deployment Using Aws
+              Lambda, API Gateway, DynamoDB, CloudFront, and S3
+            </h2>
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <p class="project-description">
+            This project involves creating a fully responsive, serverless web application using AWS services to deliver
+            scalability, high availability, and reduced operational management. AWS Lambda is used as the backbone for
+            executing backend code without provisioning servers, while Amazon API Gateway securely exposes RESTful APIs,
+            enabling client applications to interact with Lambda functions seamlessly. For data storage, DynamoDB
+            provides a fast, scalable NoSQL database service, allowing quick retrieval and efficient management of
+            application data. The static assets of the application—such as HTML, CSS, and JavaScript—are stored in
+            Amazon S3, ensuring durability and accessibility with low latency. To enhance performance and global reach,
+            Amazon CloudFront serves as a content delivery network (CDN), caching content at edge locations to reduce
+            loading times for users around the world. Together, these services create a responsive, highly optimized web
+            application that is resilient and cost-effective, as it scales automatically with demand and minimizes
+            maintenance requirements.&rarr;Check out step by step process of this project on github
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Deployment%20of%20Serverless%20web%20application%20on%20AWS'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2 class="project-title">
+              2. Design and Manage infrastructure with Terraform while automating deployment workflows using GitHub
+              Actions
+            </h2>
+            <img src="./assets/project-2.png" alt="Project 1" class="project-img" />
+          </div>
+          <p class="project-description">
+            This project involved designing and managing cloud infrastructure on AWS using Terraform to automate and
+            standardize the provisioning process. By defining infrastructure as code (IaC) in Terraform, I created a
+            streamlined setup for AWS resources such as VPCs, EC2 instances, security groups, and Application Load
+            Balancers (ALB). This approach ensured consistent, repeatable deployments, reducing manual configuration and
+            the risk of errors. To enhance reliability and availability, the EC2 instances were deployed across multiple
+            availability zones, with the ALB providing load balancing and fault tolerance. This setup optimized
+            application performance and maintained high availability, even during traffic surges or zone failures.
+            Furthermore, I integrated CI/CD workflows using GitHub Actions, which automated the entire deployment and
+            update process. This integration enabled version control and triggered infrastructure updates automatically
+            with each code change, leading to seamless deployments and minimized downtime. Overall, this project
+            achieved a highly available, robust infrastructure with a fully automated deployment pipeline.
+            &rarr;Check out step by step process of this project on github
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Dipesh001m/vpc-terraform-github-action'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2 class="project-title">
+              3. Serverless Email Marketing Application Using AWS Lambda, IAM,
+              S3, SES, and EventBridge
+            </h2>
+            <img src="./assets/project-3.png" alt="Project 2" class="project-img" />
+          </div>
+          <p class="project-description">
+            This Serverless Email Marketing Application leverages AWS Lambda, IAM, S3, SES, and EventBridge to automate
+            and scale email marketing campaigns efficiently. AWS Lambda processes contact lists and email templates
+            stored in Amazon S3, allowing for personalized email content tailored to different recipients. For
+            high-volume email delivery, Amazon SES (Simple Email Service) is utilized to ensure reliable and scalable
+            sending of large numbers of emails without managing infrastructure. EventBridge automates the scheduling and
+            triggering of email campaigns based on specific events or timing, ensuring emails are delivered promptly.
+            Security and scalability are achieved through AWS IAM (Identity and Access Management) policies, which
+            control access to resources, while the serverless architecture ensures cost-efficiency by eliminating the
+            need for traditional server management. This system provides an automated, secure, and flexible solution for
+            executing personalized and event-driven email marketing campaigns at scale.&rarr;Check out step by step
+            process of this project on github
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Serverless%20Email%20Marketing%20application'">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <h2 class="project-title">
+              4. End-to-End Real-Time Data Streaming Pipeline with Kinesis,
+              AWS Glue, S3, and Athena
+            </h2>
+            <img src="./assets/project-4.png" alt="Project 2" class="project-img" />
+          </div>
+          <p class="project-description">
+            In this project, an end-to-end real-time data streaming pipeline was designed using Amazon Web Services
+            (AWS) tools, including Kinesis, AWS Glue, S3, and Athena. The pipeline begins with data ingestion, where
+            Amazon Kinesis is utilized to stream live data from various sources, enabling immediate processing and
+            ensuring the data is available for analysis in real time. AWS Glue is then used for the ETL (Extract,
+            Transform, Load) process, transforming raw data into a structured format suitable for analytics and storing
+            the processed data in Amazon S3. To ensure easy access to this data, AWS Glue Crawler automatically catalogs
+            the data, creating metadata that facilitates efficient querying. Finally, Amazon Athena, a serverless query
+            engine, is employed to perform fast and cost-effective querying of the stored data directly in S3, enabling
+            real-time insights without the need for provisioning or managing infrastructure. This architecture supports
+            scalability, flexibility, and real-time analytics, making it ideal for processing large volumes of streaming
+            data.&rarr;Check out step by step process of this project on github
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Serverless%20Email%20Marketing%20application'">
+              Github
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:examplemail@gmail.com">dhanushmandal979@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/dipesh-mandal-a39323285/">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#profile">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -21,580 +458,8 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Portfolio</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section_pic-container">
-        <img src="./assets/profile-pic (3).png" alt="Dipesh profile picture" />
-      </div>
-      <div class="section_text">
-        <p class="section_text_p1">Hello, i'm</p>
-        <h1 class="title">Dipesh Mandal</h1>
-        <p class="section_text_p2">
-          Proficient in Aws Cloud Services, DevOps, Coding, Scripting,
-          Troubleshooting, Automation, and Support.
-        </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My linkedin profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/dipesh-mandal-a39323285/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Dipesh001m'"
-          />
-        </div>
-      </div>
-    </section>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-    <section id="about">
-      <p class="section_text_p1">Get To know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section_pic-container">
-          <img
-            src="./assets/profile-pic (1).png"
-            alt="Profile picture"
-            class="about pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-containers">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                Phoenix Advanced Software Pvt. Ltd, Jaipur — Process Associate
-                <br />
-                Sep 2021 - May 2023
-              </p>
-            </div>
-            <div class="details-containers">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.tech in Computer science CGPA-7.89 <br />Diploma in Computer
-                science CGPA-7.45
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am Dipesh Mandal, an AWS Cloud and DevOps professional with
-              expertise in automation, cloud services, and infrastructure
-              deployment. Skilled in AWS (EC2, S3, IAM, Lambda, VPC), scripting
-              (C++, Python, Bash), and tools like Docker, Terraform, Ansible,
-              and Kubernetes. I also have experience with PostgreSQL, DynamoDB,
-              and RDS. At Phoenix Advanced Software Pvt. Ltd., I automated
-              server setup and reduced manual tasks by 90%, boosting system
-              reliability by 30%. I hold a B.Tech in Computer Science (expected
-              2025) from Rajdhani Engineering College and a Diploma from
-              Shekhawati Group of Institutions. Certified in AWS Cloud
-              Practitioner and AWS Solutions Architect Associate. My projects
-              include building serverless apps with AWS Lambda, automating
-              infrastructure with Terraform, and creating data pipelines with
-              Kinesis, Glue, and Athena. I thrive in collaborative environments
-              and value continuous learning. Outside of work, I enjoy cricket,
-              badminton, and traveling.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-containers">
-            <h2 class="experience-sub-title">Aws Services</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>EC2</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>S3</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CloudFront</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Lambda</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Route53</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>VPC</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CloudFront</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>API Gateway</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ELB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DynamoDB</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CloudWatch</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-containers">
-            <h2 class="experience-sub-title">Languages & DevOps Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>BashScripting</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Terraform</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Ansible</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Kubernetes</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Yaml</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git & Github</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Puppet</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CentOS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>UBUNTU</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <p class="section_text_p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="project-title">
-                1. Responsive Serverless Web Application Deployment Using Aws
-                Lambda, API Gateway, DynamoDB, CloudFront, and S3
-              </h2>
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <p class="project-description">
-              Built a serverless web app for scalable student data management
-              using AWS Lambda, API Gateway, and DynamoDB, optimizing global
-              performance with S3 and CloudFront for low-latency delivery.
-              Achieved cost-effectiveness through AWS pay-as-you-go model and
-              ensured security with IAM roles and encrypted DynamoDB storage.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Deployment%20of%20Serverless%20web%20application%20on%20AWS'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="project-title">
-                2. Automated AWS Infrastructure Deployment with Terraform, EC2,
-                ALB, VPC, and GitHub Actions CI/CD
-              </h2>
-              <img
-                src="./assets/project-2.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <p class="project-description">
-              Automated Infrastructure Provisioning: Streamlined AWS resource
-              setup (VPC, EC2, ALB) with Terraform for consistent, repeatable
-              deployments, deploying EC2 instances across availability zones
-              with ALB to ensure high availability and fault tolerance.
-              Integrated CI/CD using GitHub Actions to automate infrastructure
-              updates and version control, enabling seamless deployments.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dipesh001m/vpc-terraform-github-action'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="project-title">
-                3. Serverless Email Marketing Application Using AWS Lambda, IAM,
-                S3, SES, and EventBridge
-              </h2>
-              <img
-                src="./assets/project-3.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <p class="project-description">
-              Automated Email Campaigns: Leveraged AWS Lambda to process contact
-              lists and templates from S3, enabling personalized email
-              campaigns. High-volume email delivery was handled by Amazon SES,
-              ensuring reliable and scalable sending capabilities. EventBridge
-              automated email scheduling for timely, event-driven delivery,
-              while IAM policies and a serverless architecture ensured security,
-              scalability, and cost-efficiency.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Serverless%20Email%20Marketing%20application'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <h2 class="project-title">
-                4. End-to-End Real-Time Data Streaming Pipeline with Kinesis,
-                AWS Glue, S3, and Athena
-              </h2>
-              <img
-                src="./assets/project-4.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <p class="project-description">
-              I developed a data pipeline that begins with data ingestion using
-              Amazon Kinesis, which streams live data for immediate processing.
-              For ETL (Extract, Transform, Load) and data storage, I applied AWS
-              Glue to transform the data, then stored the processed data in
-              Amazon S3, ensuring durability and scalability. To facilitate easy
-              data access, I used AWS Glue Crawler to automate data cataloging,
-              which maintains an up-to-date catalog of available datasets.
-              Finally, for querying, I leveraged Amazon Athena, a serverless
-              solution that provides fast, efficient querying of the data stored
-              in S3 without the need for infrastructure management.
-            </p>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Dipesh001m/aws-project/tree/main/Serverless%20Email%20Marketing%20application'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="section_text_p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:examplemail@gmail.com"
-              >dhanushmandal979@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/dipesh-mandal-a39323285/"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
