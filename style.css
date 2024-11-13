@@ -193,12 +193,6 @@ html{
     width: 450px;
     margin: auto 0;
   }
-  .section_pic-container:hover {
-    text-decoration: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    transform: scale(1.2); /* Enlarge the icon */
-    opacity: 0.9;
-  }
 
   .section_text {
     align-self: center;
