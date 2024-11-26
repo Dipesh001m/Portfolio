@@ -317,7 +317,6 @@ html{
   .details-containers {
     padding: 0.5rem;
     flex: 1;
-    background: #F6F6F2;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
