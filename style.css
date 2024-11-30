@@ -40,7 +40,7 @@ html{
  nav {
     justify-content: space-around;
     align-items: center;
-    height: 11vh;
+    height: 8vh;
     background-color: rgb(53, 53, 53);
 
  }
@@ -455,7 +455,7 @@ html{
   /* FOOTER SECTION */
   
   footer {
-    height: 15vh;
+    height: 25vh;
     margin: 0 1rem;
   }
   
