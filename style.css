@@ -40,7 +40,9 @@ html{
  nav {
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 11vh;
+    background-color: rgb(53, 53, 53);
+
  }
 
  .nav-links {
@@ -50,9 +52,8 @@ html{
   }
 
   a {
-    color: black;
+    color: #F6F6F2;
     text-decoration: none;
-    text-decoration-color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
   }
@@ -68,6 +69,8 @@ html{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    color: #F6F6F2;
+    background-color: rgb(53, 53, 53);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
   
@@ -99,7 +102,7 @@ html{
   .hamburger-icon span {
     width: 100%;
     height: 1px;
-    background-color: black;
+    background-color: #F6F6F2;
     transition: all 0.3 ease-in-out;
   }
 
@@ -415,6 +418,8 @@ html{
     height: 75vh;
   }
   
+
+  
   .contact-info-upper-container {
     display: flex;
     justify-content: center;
@@ -436,6 +441,7 @@ html{
   
   .contact-info-container p {
     font-size: larger;
+    background-color: rgb(53, 53, 53);
   }
   
   .contact-icon {
@@ -443,13 +449,13 @@ html{
   }
   
   .email-icon {
-    height: 2.5rem;
+    height: 2.8rem;
   }
   
   /* FOOTER SECTION */
   
   footer {
-    height: 25vh;
+    height: 15vh;
     margin: 0 1rem;
   }
   
