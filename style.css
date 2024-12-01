@@ -62,7 +62,7 @@ html{
     color: #DF744A;
     text-decoration: underline;
     text-underline-offset: 0.4rem;
-    text-decoration-color: #E43D12;
+    text-decoration-color: #DF744A;
   }
 
   .logo {
@@ -71,6 +71,7 @@ html{
     font-style: italic;
     color: white;
   }
+  
   
   .logo:hover {
     cursor: default;
