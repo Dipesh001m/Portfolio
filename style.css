@@ -7,7 +7,7 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
-    background-color: #F6F6F2;
+    background: linear-gradient(45deg, #fcfce8, #fde8ec, #fdebe8, #fcfce8);
     font-weight: 500;
 }
 
@@ -52,7 +52,7 @@ html{
   }
 
   a {
-    color: #F6F6F2;
+    color: white;
     text-decoration: none;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -69,9 +69,7 @@ html{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    color: #F6F6F2;
-    background-color: rgb(53, 53, 53);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
   }
   
   .logo:hover {
