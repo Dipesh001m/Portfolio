@@ -7,7 +7,7 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
-    background: linear-gradient(45deg, #fcfce8, #fde8ec, #fdebe8, #fcfce8);
+    background: linear-gradient(45deg, #abc5bf, #f4f8ed, #f4f8ed, #abc5bf);
     font-weight: 500;
 }
 
@@ -114,7 +114,7 @@ html{
   .hamburger-icon span {
     width: 100%;
     height: 1px;
-    background-color: #F6F6F2;
+    background-color: white;
     transition: all 0.3 ease-in-out;
   }
 
@@ -122,7 +122,7 @@ html{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #F6F6F2;
+    background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
