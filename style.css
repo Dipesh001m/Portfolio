@@ -7,9 +7,10 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
-    background: white;
     font-weight: 500;
+    background: #fffff6;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -42,6 +43,7 @@ html{
     align-items: center;
     height: 8vh;
     background-color: rgb(53, 53, 53);
+    border-radius: .5rem;
 
  }
 
@@ -71,19 +73,6 @@ html{
     font-style: italic;
     color: white;
   } 
-  
-  .logo span {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  
-  /* Hover effect for each letter */
-  .logo span:hover {
-    transform: scale(1.2) rotate(10deg);
-    color: #ff5733; /* Change to a vibrant color on hover */
-  }
   
   
   .logo:hover {
