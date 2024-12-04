@@ -6,21 +6,27 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section"); // Select all sections you want to observe
 
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                } else {
-                    entry.target.classList.remove("visible");
-                }
-            });
-        },
-        { threshold: 0.1 } // Trigger when 10% of the section is visible
-    );
+    const observerOptions = {
+        root: null, // Observer will use the viewport as the root
+        rootMargin: '0px', // No margin to offset
+        threshold: 0.1 // 10% of the section must be visible to trigger
+    };
 
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // When the section is visible, add a class, otherwise remove it
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible"); // Add visible class when section is in view
+            } else {
+                entry.target.classList.remove("visible"); // Remove visible class when section is out of view
+            }
+        });
+    }, observerOptions);
+
+    // Observe each section individually
     sections.forEach(section => observer.observe(section));
 });
+
 

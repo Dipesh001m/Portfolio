@@ -177,7 +177,7 @@ html{
     min-height: fit-content;
     opacity: 0; /* Initially hidden */
     transform: translateY(50px); /* Slightly offset */
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition: opacity 1s ease, transform 1s ease;
   }
   section.visible {
     opacity: 1; /* Fully visible */
@@ -244,7 +244,6 @@ html{
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.2); /* Enlarge the icon */
     opacity: 0.8;
-
   }
 
   .btn-container {
