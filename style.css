@@ -114,6 +114,8 @@ html{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 9999; /* Ensure it stays on top */
+    transform: translateY(10%);
   }
 
   .menu-links a {
@@ -168,12 +170,19 @@ html{
   /* SECTION */
 
   section {
-    padding-top: 4vh;
+    padding-top: 9vh;
     height: 100vh;
     margin: 0 12rem;
     box-sizing: border-box;
     min-height: fit-content;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slightly offset */
+    transition: opacity 1.5s ease, transform 1.5s ease;
   }
+  section.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+}
 
   .section-container {
     display: flex;
@@ -188,6 +197,7 @@ html{
     gap: 7rem;
     height: 90vh;
   }
+
 
   .section_pic-container {
     display: flex;
@@ -216,6 +226,7 @@ html{
     font-style: italic;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
+  
 
   #socials-container {
     display: flex;
@@ -233,6 +244,7 @@ html{
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.2); /* Enlarge the icon */
     opacity: 0.8;
+
   }
 
   .btn-container {
@@ -290,6 +302,7 @@ html{
     justify-content: center;
   }
 
+
   .h1,p, .title {
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -309,7 +322,7 @@ html{
   .about-containers,
   .about-details-container {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
   .about-pic {
@@ -448,7 +461,7 @@ html{
   }
   
   .email-icon {
-    height: 2.8rem;
+    height: 3rem;
   }
   
   /* FOOTER SECTION */
