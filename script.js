@@ -30,15 +30,36 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
     const navElement = document.getElementById("nav");
-    
-    // Scroll to the nav section when the page loads
-    navElement.scrollIntoView({
-        behavior: "smooth", // Optional: Use 'auto' for instant scrolling
-        block: "start" // Align to the top of the viewport
-    });
+
+    // Function to check media query and scroll to nav
+    const scrollToNav = (query) => {
+        if (query.matches && navElement) {
+            navElement.scrollIntoView({
+                behavior: "smooth", // Use 'smooth' scrolling
+                block: "start" // Align to the top of the viewport
+            });
+        }
+    };
+
+    // Media queries
+    const media600 = window.matchMedia("(max-width: 600px)");
+    const media1200 = window.matchMedia("(max-width: 1200px)");
+    const media1400 = window.matchMedia("(max-width: 1400px)");
+
+    // Check each media query and scroll to nav if it matches
+    scrollToNav(media600);
+    scrollToNav(media1200);
+    scrollToNav(media1400);
+
+    // Optionally, listen for changes in media query matches
+    media600.addEventListener("change", () => scrollToNav(media600));
+    media1200.addEventListener("change", () => scrollToNav(media1200));
+    media1400.addEventListener("change", () => scrollToNav(media1400));
 });
+
 
 
 
