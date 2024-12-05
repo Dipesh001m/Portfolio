@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const navElement = document.getElementById("nav");
+    const navElement = document.getElementById("nav-links");
 
-    // Function to check media query and scroll to nav
+    // Function to check media query and scroll to nav-links
     const scrollToNav = (query) => {
         if (query.matches && navElement) {
             navElement.scrollIntoView({
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const media1200 = window.matchMedia("(max-width: 1200px)");
     const media1400 = window.matchMedia("(max-width: 1400px)");
 
-    // Check each media query and scroll to nav if it matches
+    // Check each media query and scroll to nav-links if it matches
     scrollToNav(media600);
     scrollToNav(media1200);
     scrollToNav(media1400);
@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     media1200.addEventListener("change", () => scrollToNav(media1200));
     media1400.addEventListener("change", () => scrollToNav(media1400));
 });
+
 
 
 
