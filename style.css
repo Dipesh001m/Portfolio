@@ -8,9 +8,9 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
     font-weight: 500;
-    background: #fffff6;
-}
+    background: linear-gradient(90deg, #e6faeb, #f7f1e1, #f9eef2);
 
+}
 
 html{
     scroll-behavior: smooth;
