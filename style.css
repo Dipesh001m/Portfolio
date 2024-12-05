@@ -18,7 +18,7 @@ html{
 
   
   p {
-    color: #DF744A;
+    color: #f77d4d;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
   }
@@ -59,10 +59,10 @@ html{
   }
 
   a:hover {
-    color: #DF744A;
+    color: #f77d4d;
     text-decoration: underline;
     text-underline-offset: 0.4rem;
-    text-decoration-color: #DF744A;
+    text-decoration-color: #f77d4d;
   }
 
   .logo {
@@ -133,7 +133,7 @@ html{
   }
 
   .menu-links li :hover {
-    color: #DF744A;
+    color: #f77d4d;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
