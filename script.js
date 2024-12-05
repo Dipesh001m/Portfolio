@@ -30,3 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const navElement = document.getElementById("nav");
+    
+    // Scroll to the nav section when the page loads
+    navElement.scrollIntoView({
+        behavior: "smooth", // Optional: Use 'auto' for instant scrolling
+        block: "start" // Align to the top of the viewport
+    });
+});
+
+
+
