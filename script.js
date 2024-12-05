@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const navElement = document.getElementById("nav-links");
+    const navElement = document.getElementById("desktop-nav");
 
     // Function to check media query and scroll to nav-links
     const scrollToNav = (query) => {
@@ -50,15 +50,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const media1400 = window.matchMedia("(max-width: 1400px)");
 
     // Check each media query and scroll to nav-links if it matches
-    scrollToNav(media600);
-    scrollToNav(media1200);
-    scrollToNav(media1400);
+    setTimeout(() => {
+        scrollToNav(media600);
+        scrollToNav(media1200);
+        scrollToNav(media1400);
+    }, 100); // Delay for smoother execution on mobile
 
     // Optionally, listen for changes in media query matches
     media600.addEventListener("change", () => scrollToNav(media600));
     media1200.addEventListener("change", () => scrollToNav(media1200));
     media1400.addEventListener("change", () => scrollToNav(media1400));
 });
+
+
 
 
 
