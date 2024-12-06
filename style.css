@@ -107,9 +107,9 @@ html{
 
   .menu-links {
     position: absolute;
+    border-radius: 1rem;
     top: 100%;
     right: 0;
-    background: linear-gradient(90deg, #e6faeb, #f7f1e1, #f9eef2);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -228,7 +228,7 @@ html{
   }
   .section_text_p2 {
     transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
-    color: #f77d4d; /* Initial text color */
+    color: #f77d4d;
 }
 
 .section_text_p2:hover {
@@ -383,7 +383,7 @@ html{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1.3rem;
     justify-content: space-around;
   }
   
