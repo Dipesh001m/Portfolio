@@ -1,28 +1,27 @@
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-  
-    // Toggle the `open` class for both elements
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+
+  // Toggle the `open` class for both elements
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
+// Close the menu when clicking outside
+document.addEventListener("click", function (event) {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+
+  // Check if the click is outside the menu and icon
+  if (
+    !menu.contains(event.target) &&
+    !icon.contains(event.target) &&
+    menu.classList.contains("open")
+  ) {
+    menu.classList.remove("open");
+    icon.classList.remove("open");
   }
-  
-  // Close the menu when clicking outside
-  document.addEventListener("click", function (event) {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-  
-    // Check if the click is outside the menu and icon
-    if (
-      !menu.contains(event.target) &&
-      !icon.contains(event.target) &&
-      menu.classList.contains("open")
-    ) {
-      menu.classList.remove("open");
-      icon.classList.remove("open");
-    }
-  });
-  
+});
 
 
 
@@ -64,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
 
 
   
